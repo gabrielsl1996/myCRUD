@@ -1,4 +1,3 @@
-# myCRUD
+# myCRUD - Gabriel Lopes
 Projeto CRUD - Eletrofrigor
-\newline
-Gabriel Lopes
+
