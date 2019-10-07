@@ -1,3 +1,3 @@
 # myCRUD - Gabriel Lopes
-Projeto CRUD - Eletrofrigor
+Desafio de Desenvolvimento - Processo Seletivo
 
