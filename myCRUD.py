@@ -11,11 +11,11 @@ cursor = connection.cursor(dictionary=True)
 
 #Criação do banco de dados mySQL
 try:
-    cursor.execute("CREATE DATABASE mycrudi ")
+    cursor.execute("CREATE DATABASE mycrud ")
 except: pass #Caso o database já exista
 
 #Acessa database
-connection = mysql.connector.connect(host='localhost', user='root', password='', database='mycrudi', charset='utf8')
+connection = mysql.connector.connect(host='localhost', user='root', password='', database='mycrud', charset='utf8')
 cursor = connection.cursor(dictionary=True)
 
 #Criação da tabela de usuários
