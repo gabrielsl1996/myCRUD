@@ -5,6 +5,8 @@ import re
 try: input = raw_input
 except NameError: pass
 
+######### Abertura de conexão e criação do banco de dados e tabelas #########
+
 #Acessa MySQL
 connection = mysql.connector.connect(host='localhost', user='root', password='', charset='utf8')
 cursor = connection.cursor(dictionary=True)
@@ -278,6 +280,7 @@ def CreateCompany(n):
         #Fecha tabela
         connection.commit()
 
+#Criação de relacionamento
 def CreateRelashionship():
     wantedUserName = input("Digite o nome do usuario\n")
     wantedCompanyName = input("Digite o nome da empresa\n")
@@ -335,6 +338,7 @@ def CreateRelashionship():
         input("Digite qualquer tecla para voltar ao menu principal\n")
 
 
+
 ############################## Menu ##################################
 def Menu():
     option = -1
@@ -363,15 +367,11 @@ def Menu():
                 CreateCompany(1)
             elif (option == 6):
                 CreateRelashionship()
+            elif (option == 7):
+                DeleteRelationship()
 
 
+##################### Programa e fechamento de conexão #######################
 
 Menu()
-#CreateUser(1)
-#DeleteUserName()
-
-
-
-
-
 connection.close()
